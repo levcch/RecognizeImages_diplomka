@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Распознавание изображений</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип" class="logo">
+        </div>
+
+        <!-- Path Bar -->
+        <div class="path-bar" id="path-container">
+            <!-- Path will be dynamically inserted here -->
+        </div>
+
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar" id="folder-tree">
+                <!-- Folder tree will be dynamically inserted here -->
+            </div>
+
+            <!-- Main View -->
+            <div class="main-view" id="content-view">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for metadata -->
+    <div class="modal" id="metadata-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="metadata-content"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html> 

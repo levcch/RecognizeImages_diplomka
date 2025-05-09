@@ -1,0 +1,16 @@
+{
+  "name": "image-recognizer",
+  "version": "1.0.0",
+  "description": "File manager application with image recognition capabilities",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --inspect"
+  },
+  "dependencies": {
+    "electron": "^24.0.0"
+  },
+  "devDependencies": {
+    "electron-reload": "^1.5.0"
+  }
+} 
